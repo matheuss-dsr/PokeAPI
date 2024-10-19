@@ -16,10 +16,15 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
 input {
     padding: 10px;
     font-size: 16px;
-    margin-right: 10px;
 }
 
 button {
@@ -28,10 +33,25 @@ button {
     cursor: pointer;
 }
 
-#pokemonInfo {
-    margin-top: 20px;
+.comparison-result {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-#pokemonInfo img {
-    max-width: 150px;
+.pokemon-card {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.pokemon-card img {
+    max-width: 100px;
+}
+
+#comparisonResult p {
+    margin: 5px 0;
 }
