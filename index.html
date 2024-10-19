@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon Finder</title>
+    <title>Comparador de pokémon</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>Pokémon Finder</h1>
-        <input type="text" id="pokemonInput" placeholder="Enter Pokémon name or ID">
-        <button onclick="fetchPokemon()">Search</button>
-        <div id="pokemonInfo"></div>
+        <h1>Comparador de pokémon</h1>
+        <div class="input-container">
+            <input type="text" id="pokemonInput1" placeholder="Insira o nome do Pokémon">
+            <input type="text" id="pokemonInput2" placeholder="Insira o nome do Pokémon">
+            <button onclick="comparePokemon()">Compare</button>
+        </div>
+        <div id="comparisonResult" class="comparison-result"></div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
